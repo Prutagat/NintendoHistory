@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		819097762BBB30DE000C2F3A /* NintendoHistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */; };
-		819097782BBB30DE000C2F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097772BBB30DE000C2F3A /* ContentView.swift */; };
 		8190977A2BBB30E0000C2F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819097792BBB30E0000C2F3A /* Assets.xcassets */; };
 		8190977D2BBB30E0000C2F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8190977C2BBB30E0000C2F3A /* Preview Assets.xcassets */; };
+		819097862BBB30F4000C2F3A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097852BBB30F4000C2F3A /* Post.swift */; };
+		819097882BBB3AEE000C2F3A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097872BBB3AEE000C2F3A /* InfoView.swift */; };
+		8190978A2BBB3E29000C2F3A /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097892BBB3E29000C2F3A /* InfoRow.swift */; };
+		8190978C2BBB4176000C2F3A /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190978B2BBB4176000C2F3A /* InfoDetails.swift */; };
+		819097902BBB43CC000C2F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190978F2BBB43CC000C2F3A /* ContentView.swift */; };
+		819097922BBB44F9000C2F3A /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097912BBB44F9000C2F3A /* HelloView.swift */; };
+		819097972BBB45CC000C2F3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097962BBB45CC000C2F3A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		819097722BBB30DE000C2F3A /* NintendoHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NintendoHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoHistoryApp.swift; sourceTree = "<group>"; };
-		819097772BBB30DE000C2F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		819097792BBB30E0000C2F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8190977C2BBB30E0000C2F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		819097852BBB30F4000C2F3A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		819097872BBB3AEE000C2F3A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		819097892BBB3E29000C2F3A /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		8190978B2BBB4176000C2F3A /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
+		8190978F2BBB43CC000C2F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		819097912BBB44F9000C2F3A /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		819097962BBB45CC000C2F3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */,
-				819097772BBB30DE000C2F3A /* ContentView.swift */,
+				8190978F2BBB43CC000C2F3A /* ContentView.swift */,
+				8190978E2BBB432F000C2F3A /* lesson1 */,
 				819097792BBB30E0000C2F3A /* Assets.xcassets */,
 				8190977B2BBB30E0000C2F3A /* Preview Content */,
 			);
@@ -65,6 +78,43 @@
 				8190977C2BBB30E0000C2F3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8190978E2BBB432F000C2F3A /* lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				819097932BBB456B000C2F3A /* Info */,
+				819097942BBB4576000C2F3A /* Hello */,
+				819097952BBB458F000C2F3A /* Settings */,
+			);
+			path = lesson1;
+			sourceTree = "<group>";
+		};
+		819097932BBB456B000C2F3A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				819097852BBB30F4000C2F3A /* Post.swift */,
+				819097872BBB3AEE000C2F3A /* InfoView.swift */,
+				819097892BBB3E29000C2F3A /* InfoRow.swift */,
+				8190978B2BBB4176000C2F3A /* InfoDetails.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		819097942BBB4576000C2F3A /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				819097912BBB44F9000C2F3A /* HelloView.swift */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
+		819097952BBB458F000C2F3A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				819097962BBB45CC000C2F3A /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819097782BBB30DE000C2F3A /* ContentView.swift in Sources */,
+				819097882BBB3AEE000C2F3A /* InfoView.swift in Sources */,
+				819097972BBB45CC000C2F3A /* SettingsView.swift in Sources */,
+				819097862BBB30F4000C2F3A /* Post.swift in Sources */,
+				819097902BBB43CC000C2F3A /* ContentView.swift in Sources */,
 				819097762BBB30DE000C2F3A /* NintendoHistoryApp.swift in Sources */,
+				8190978C2BBB4176000C2F3A /* InfoDetails.swift in Sources */,
+				819097922BBB44F9000C2F3A /* HelloView.swift in Sources */,
+				8190978A2BBB3E29000C2F3A /* InfoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
