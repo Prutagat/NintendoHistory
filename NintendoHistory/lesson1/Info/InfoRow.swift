@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoRow: View {
+    
+    @EnvironmentObject var appSetup: AppSetup
+    
     var post: Post
     
     var body: some View {
@@ -17,10 +20,12 @@ struct InfoRow: View {
                 .scaledToFill()
                 .clipShape(Circle())
                 .frame(width: 60, height: 60)
-                .padding(.leading, 12)
+                .padding(.leading, 16)
+                .padding(.top, CGFloat(appSetup.rowHeight))
             
             Text(post.title)
-
+                .padding(.top, CGFloat(appSetup.rowHeight))
+            
             Spacer()
         }
     }

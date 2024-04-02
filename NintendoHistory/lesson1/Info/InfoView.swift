@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    @EnvironmentObject var appSetup: AppSetup
+    
     var body: some View {
         NavigationView {
             List(Post.data) { post in
@@ -17,8 +20,9 @@ struct InfoView: View {
                     InfoRow(post: post)
                 }
             }
-            .navigationTitle("Приставки")
+            .navigationTitle(appSetup.titleOn ? "Приставки" : "")
             .listStyle(.plain)
+            .padding(.top, CGFloat(appSetup.rowHeight))
         }
     }
 }
