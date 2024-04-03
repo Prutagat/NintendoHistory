@@ -9,32 +9,43 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    // Toggle
-    @State private var show = true
+    @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var appSetup: AppSetup
     
     // Picker
-    @State private var selected = "one"
+    //@State private var selected = "one"
     
-    // Slider
-    @State private var brightness: Double = 0
     
     var body: some View {
         Form  {
             Section {
-                Toggle("Change me", isOn: $show)
+                Text("\(colorScheme == .light ? "Light" : "Dark") Theme enabled")
             }
             
             Section {
-                Picker("Change me", selection: $selected) {
-                    ForEach(["one", "two", "three"], id: \.self) {
-                        Text($0)
+                Toggle("Title is visible", isOn: appSetup.$titleOn)
+                    .onChange(of: appSetup.titleOn) {
+                        appSetup.titleOn.toggle()
                     }
+                
+                if appSetup.titleOn {
+                    Text("Navigation title enabled")
                 }
-                .pickerStyle(.wheel)
             }
             
+//            Section {
+//                Picker("Change me", selection: $selected) {
+//                    ForEach(["one", "two", "three"], id: \.self) {
+//                        Text($0)
+//                    }
+//                }
+//                .pickerStyle(.palette)
+//            }
+            
             Section {
-                Slider(value: $brightness, in: -100...100, step: 1)
+                Text("Change row height. Now: \(Int(appSetup.rowHeight))")
+                Slider(value: appSetup.$rowHeight, in: 0...100, step: 1)
+                InfoRow(post: Post.data[0])
             }
         }
     }
@@ -42,5 +53,4 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
-//        .environment(ColorTheme())
 }

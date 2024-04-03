@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoDetails: View {
+    
+    @EnvironmentObject var appSetup: AppSetup
+    
     var post: Post
     
     var body: some View {
@@ -28,6 +31,7 @@ struct InfoDetails: View {
                 Text(post.description)
             }
             .padding()
+            .padding(.top, CGFloat(appSetup.rowHeight))
         }
         .navigationTitle(post.title)
         .background(Color(.systemGray6))

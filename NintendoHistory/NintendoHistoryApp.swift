@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct NintendoHistoryApp: App {
+    
+    @StateObject var appSetup = AppSetup()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appSetup)
         }
     }
 }
