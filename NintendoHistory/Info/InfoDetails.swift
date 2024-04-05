@@ -40,4 +40,5 @@ struct InfoDetails: View {
 
 #Preview {
     InfoDetails(post: Post.data[0])
+        .environmentObject(AppSetup())
 }

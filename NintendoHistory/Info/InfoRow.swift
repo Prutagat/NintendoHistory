@@ -33,4 +33,5 @@ struct InfoRow: View {
 
 #Preview {
     InfoRow(post: Post.data[0])
+        .environmentObject(AppSetup())
 }

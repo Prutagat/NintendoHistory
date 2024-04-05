@@ -12,6 +12,8 @@ struct Post: Identifiable {
     let title: String
     let description: String
     let image: Image
+    let sales: Int
+    var barColor: Color
     
     static let data = [
         Post(id: 1,
@@ -50,7 +52,9 @@ struct Post: Identifiable {
                 - Super Mario Bros.: The Lost Levels
                 - Dragon Quest II
                 """,
-             image: Image("NES")),
+             image: Image("NES"),
+             sales: 62,
+             barColor: .brown),
         Post(id: 2,
              title: "Super Nintendo Entertainment System (SNES)",
              description:
@@ -90,7 +94,9 @@ struct Post: Identifiable {
                 - Final Fantasy V
                 - Super Mario RPG: Legend of the Seven Stars
                 """,
-             image: Image("SNES")),
+             image: Image("SNES"),
+             sales: 49,
+             barColor: .cyan),
         Post(id: 3,
              title: "Nintendo 64",
              description: 
@@ -123,7 +129,9 @@ struct Post: Identifiable {
                 - Super Smash Brothers
                 - Donkey Kong Country 3: Dixie Kong's Double Trouble
                 """,
-             image: Image("Nintendo 64")),
+             image: Image("Nintendo 64"),
+             sales: 33,
+             barColor: .blue),
         Post(id: 4,
              title: "GameCube",
              description: 
@@ -184,7 +192,9 @@ struct Post: Identifiable {
                 - Super Mario Strikers
                 - Shadow The Hedgehog
                 """,
-             image: Image("GameCube")),
+             image: Image("GameCube"),
+             sales: 22,
+             barColor: .yellow),
         Post(id: 5,
              title: "Wii",
              description:
@@ -215,7 +225,9 @@ struct Post: Identifiable {
                 - Mario Kart Wii
                 - Wii Sports Resort — входит в комплект Wii MotionPlus
                 """,
-             image: Image("Wii")),
+             image: Image("Wii"),
+             sales: 14,
+             barColor: .mint),
         Post(id: 6,
              title: "Nintendo Switch",
              description:
@@ -255,7 +267,9 @@ struct Post: Identifiable {
                 - Nintendo Labo Toy-Con 01: Variety Kit
                 - Enter the Gungeon
                 """,
-             image: Image("Nintendo Switch"))
+             image: Image("Nintendo Switch"),
+             sales: 139,
+             barColor: .red)
     ]
     
 }
