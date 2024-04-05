@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814635282BC01754005F23EF /* SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814635272BC01754005F23EF /* SalesView.swift */; };
+		8146352A2BC028DC005F23EF /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814635292BC028DC005F23EF /* VolumeView.swift */; };
 		817D0EB52BBC93E100A2D8F8 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D0EB42BBC93E100A2D8F8 /* AppSetup.swift */; };
 		819097762BBB30DE000C2F3A /* NintendoHistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */; };
 		8190977A2BBB30E0000C2F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819097792BBB30E0000C2F3A /* Assets.xcassets */; };
@@ -16,11 +18,13 @@
 		8190978A2BBB3E29000C2F3A /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097892BBB3E29000C2F3A /* InfoRow.swift */; };
 		8190978C2BBB4176000C2F3A /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190978B2BBB4176000C2F3A /* InfoDetails.swift */; };
 		819097902BBB43CC000C2F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8190978F2BBB43CC000C2F3A /* ContentView.swift */; };
-		819097922BBB44F9000C2F3A /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097912BBB44F9000C2F3A /* HelloView.swift */; };
+		819097922BBB44F9000C2F3A /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097912BBB44F9000C2F3A /* StatisticsView.swift */; };
 		819097972BBB45CC000C2F3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819097962BBB45CC000C2F3A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814635272BC01754005F23EF /* SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesView.swift; sourceTree = "<group>"; };
+		814635292BC028DC005F23EF /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 		817D0EB42BBC93E100A2D8F8 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		819097722BBB30DE000C2F3A /* NintendoHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NintendoHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoHistoryApp.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		819097892BBB3E29000C2F3A /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		8190978B2BBB4176000C2F3A /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
 		8190978F2BBB43CC000C2F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		819097912BBB44F9000C2F3A /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		819097912BBB44F9000C2F3A /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		819097962BBB45CC000C2F3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,14 +50,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		817D0EB12BBC938700A2D8F8 /* lesson2 */ = {
-			isa = PBXGroup;
-			children = (
-				817D0EB42BBC93E100A2D8F8 /* AppSetup.swift */,
-			);
-			path = lesson2;
-			sourceTree = "<group>";
-		};
 		819097692BBB30DE000C2F3A = {
 			isa = PBXGroup;
 			children = (
@@ -73,10 +69,12 @@
 		819097742BBB30DE000C2F3A /* NintendoHistory */ = {
 			isa = PBXGroup;
 			children = (
+				817D0EB42BBC93E100A2D8F8 /* AppSetup.swift */,
 				819097752BBB30DE000C2F3A /* NintendoHistoryApp.swift */,
 				8190978F2BBB43CC000C2F3A /* ContentView.swift */,
-				817D0EB12BBC938700A2D8F8 /* lesson2 */,
-				8190978E2BBB432F000C2F3A /* lesson1 */,
+				819097932BBB456B000C2F3A /* Info */,
+				819097942BBB4576000C2F3A /* Statistics */,
+				819097952BBB458F000C2F3A /* Settings */,
 				819097792BBB30E0000C2F3A /* Assets.xcassets */,
 				8190977B2BBB30E0000C2F3A /* Preview Content */,
 			);
@@ -91,16 +89,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8190978E2BBB432F000C2F3A /* lesson1 */ = {
-			isa = PBXGroup;
-			children = (
-				819097932BBB456B000C2F3A /* Info */,
-				819097942BBB4576000C2F3A /* Hello */,
-				819097952BBB458F000C2F3A /* Settings */,
-			);
-			path = lesson1;
-			sourceTree = "<group>";
-		};
 		819097932BBB456B000C2F3A /* Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +100,14 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
-		819097942BBB4576000C2F3A /* Hello */ = {
+		819097942BBB4576000C2F3A /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				819097912BBB44F9000C2F3A /* HelloView.swift */,
+				819097912BBB44F9000C2F3A /* StatisticsView.swift */,
+				814635272BC01754005F23EF /* SalesView.swift */,
+				814635292BC028DC005F23EF /* VolumeView.swift */,
 			);
-			path = Hello;
+			path = Statistics;
 			sourceTree = "<group>";
 		};
 		819097952BBB458F000C2F3A /* Settings */ = {
@@ -201,11 +191,13 @@
 				819097882BBB3AEE000C2F3A /* InfoView.swift in Sources */,
 				819097972BBB45CC000C2F3A /* SettingsView.swift in Sources */,
 				817D0EB52BBC93E100A2D8F8 /* AppSetup.swift in Sources */,
+				814635282BC01754005F23EF /* SalesView.swift in Sources */,
+				8146352A2BC028DC005F23EF /* VolumeView.swift in Sources */,
 				819097862BBB30F4000C2F3A /* Post.swift in Sources */,
 				819097902BBB43CC000C2F3A /* ContentView.swift in Sources */,
 				819097762BBB30DE000C2F3A /* NintendoHistoryApp.swift in Sources */,
 				8190978C2BBB4176000C2F3A /* InfoDetails.swift in Sources */,
-				819097922BBB44F9000C2F3A /* HelloView.swift in Sources */,
+				819097922BBB44F9000C2F3A /* StatisticsView.swift in Sources */,
 				8190978A2BBB3E29000C2F3A /* InfoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NintendoHistory/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -368,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NintendoHistory/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -13,17 +13,17 @@ struct ContentView: View {
         TabView() {
             InfoView()
                 .tabItem {
-                    Label("Сonsoles", systemImage: "gamecontroller.fill")
+                    Label("Консоли", systemImage: "gamecontroller.fill")
                 }
             
-            HelloView()
+            StatisticsView()
                 .tabItem {
-                    Label("Hello", systemImage: "person.circle.fill")
+                    Label("Статистика", systemImage: "chart.bar.xaxis")
                 }
             
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "list.bullet.circle.fill")
+                    Label("Настройки", systemImage: "list.bullet.circle.fill")
                 }
         }
     }
@@ -31,4 +31,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AppSetup())
 }

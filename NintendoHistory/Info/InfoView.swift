@@ -29,4 +29,5 @@ struct InfoView: View {
 
 #Preview {
     InfoView()
+        .environmentObject(AppSetup())
 }
